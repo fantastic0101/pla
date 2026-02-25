@@ -1,12 +1,12 @@
 <?php
 
-namespace Althinect\FilamentSpatieRolesPermissions\Resources;
+namespace App\Filament\Resources;
 
-use Althinect\FilamentSpatieRolesPermissions\Resources\PermissionResource\Pages\CreatePermission;
-use Althinect\FilamentSpatieRolesPermissions\Resources\PermissionResource\Pages\EditPermission;
-use Althinect\FilamentSpatieRolesPermissions\Resources\PermissionResource\Pages\ListPermissions;
-use Althinect\FilamentSpatieRolesPermissions\Resources\PermissionResource\Pages\ViewPermission;
-use Althinect\FilamentSpatieRolesPermissions\Resources\PermissionResource\RelationManager\RoleRelationManager;
+use App\Filament\Resources\PermissionResource\Pages\CreatePermission;
+use App\Filament\Resources\PermissionResource\Pages\EditPermission;
+use App\Filament\Resources\PermissionResource\Pages\ListPermissions;
+use App\Filament\Resources\PermissionResource\Pages\ViewPermission;
+use App\Filament\Resources\PermissionResource\RelationManager\RoleRelationManager;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Grid;
