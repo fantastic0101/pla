@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Game;
+use App\Http\Controllers\Layouts\ApplicationController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,9 @@ Route::get('clear', function() {
 
     return back();
 });
+
+Route::get('/', ApplicationController::class);
+Route::get('{view}', ApplicationController::class)->where('view', '(.*)');
 
 // GAMES PROVIDER
 include_once(__DIR__ . '/groups/provider/games.php');
